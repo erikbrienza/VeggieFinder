@@ -13,7 +13,7 @@ export const getVegetarianRecipes = async (query) => {
         number: 10,  // Numero di ricette da ottenere
       },
     });
-    return response.data.resulats;  // Restituisce le ricette trovate
+    return response.data.results;  // Restituisce le ricette trovate
   } catch (error) {
     console.error("Errore nella chiamata API:", error);
     return [];
